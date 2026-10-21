@@ -1,37 +1,42 @@
-<html>
-  <head>
-  <meta charset="UTF-8">
-  <title>Java 1</title>
-  </head>
-  <body>
- <label>Numri i pare</label>
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java 1</title>
+</head>
+<body>
+    <label>Numri i parë</label>
     <input type="number" id="nr1">
     <br>
-     <label>Numri i dyte</label>
+
+    <label>Numri i dytë</label>
     <input type="number" id="nr2">
     <br>
-    <button type="submit" onclick="sum()">+</button>
-    <p id="result"></p>
-    <br>
-    <button type="submit" onclick="zbritje()">-</button>
-<p id="result2"></p>
-    <br>
-    <script>
-      function sum()
-      {
-        var a=Number(document.getElementById('nr1').value);
-         var b=Number(document.getElementById('nr2').value);
-        var c=a+b;
-        document.getElementById('result').innerHTML=c;
-      }
-function zbritje()
-      {
-        var a=Number(document.getElementById('nr1').value);
-         var b=Number(document.getElementById('nr2').value);
-        var d=a-b;
-        document.getElementById('result2').innerHTML=d;
-      }
 
+    <button type="button" onclick="sum()">Mbledhja (+)</button>
+    <button type="button" onclick="zbritje()">Zbritja (-)</button>
+
+    <p id="result"></p>
+
+    <script>
+        function sum() {
+            var a = Number(document.getElementById('nr1').value);
+            var b = Number(document.getElementById('nr2').value);
+
+            var c = a + b;
+
+            document.getElementById('result').innerHTML = c;
+        }
+
+        function zbritje() {
+            var a = Number(document.getElementById('nr1').value);
+            var b = Number(document.getElementById('nr2').value);
+
+            var e = a - b;
+
+            document.getElementById('result').innerHTML = e;
+        }
     </script>
-  </body>
-  </html>
+</body>
+</html>
