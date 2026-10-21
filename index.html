@@ -14,9 +14,11 @@
     <input type="number" id="nr2">
     <br>
 
-    <button type="button" onclick="sum()">+</button>
-    <button type="button" onclick="zbritje()">-</button>
-      <button type="button" onclick="shumzimi()">*</button>
+    <button type="button" onclick="sum()">Mbledhja(+)</button>
+    <button type="button" onclick="zbritje()">Zbritja(-)</button>
+      <button type="button" onclick="shumzimi()">Shumzimi(*)</button>
+     <button type="button" onclick="pjestimi()">pjestimi(/)</button>
+
 
     <p id="result"></p>
 
@@ -46,6 +48,14 @@
             var f = a * b;
 
             document.getElementById('result').innerHTML = f;
+        }
+        function pjestimi() {
+            var a = Number(document.getElementById('nr1').value);
+            var b = Number(document.getElementById('nr2').value);
+
+            var h = a * b;
+
+            document.getElementById('result').innerHTML = h;
         }
     </script>
 </body>
